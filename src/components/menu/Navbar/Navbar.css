@@ -13,7 +13,7 @@
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--spacing-md);
-  height: 64px;
+  height: 72px;
   display: flex;
   align-items: center;
   gap: var(--spacing-lg);
@@ -29,8 +29,15 @@
 }
 
 .navbar__logo-mark {
-  width: 32px;
-  height: 32px;
+  height: 40px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo-mark img {
+  height: 100%;
+  width: auto;
 }
 
 .navbar__logo-text {
@@ -53,9 +60,9 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 6px 12px;
+  padding: 7px 14px;
   border-radius: 8px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: var(--color-ink-muted);
   text-decoration: none;
@@ -159,9 +166,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 18px;
+  padding: 9px 20px;
   border-radius: 10px;
-  font-size: 0.875rem;
+  font-size: 0.925rem;
   font-weight: 500;
   font-family: var(--font-body);
   text-decoration: none;
@@ -187,6 +194,12 @@
   background: var(--color-blossom);
   color: white;
   box-shadow: 0 2px 12px rgba(220, 100, 140, 0.3);
+}
+
+.btn--primary,
+.btn--primary:hover,
+.btn--primary:visited {
+  color: white;
 }
 
 .btn--primary:hover {

@@ -2,7 +2,10 @@
 import { useEffect, useState } from 'react'; 
 import { Link, useLocation } from 'react-router-dom';
 import { menuSchema } from '../../../schema';
+
 import Dropdown from '../Dropdown/Dropdown';
+
+import logoUrl from '../../../assets/images/logo.png';
 import './Navbar.css';
 export default function Navbar () {
     const [openDropdown, setOpenDropdown] = useState(null);
@@ -20,9 +23,9 @@ export default function Navbar () {
     return (
         <nav className="navbar">
             <div className="navbar__inner">
-                <Link to="/" classNJame="navbar__logo">
+                <Link to="/" className="navbar__logo">
                     <div className="navbar__logo-mark">
-                        {/* logo image */}
+                        <img src={logoUrl} alt="Seyona" />
                     </div>
                 </Link>
                 {/* Desktop */}
