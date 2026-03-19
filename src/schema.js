@@ -127,6 +127,47 @@ export const pricingSchema = {
     ],
 }
 
+export const footerSchema = {
+    brand: {
+        tagline: 'FAQ content that stays fresh, automatically.',
+    },
+    columns: [
+        {
+            id: 'product',
+            label: 'Product',
+            visible: true,
+            links: [
+                { id: 'how-it-works', label: 'How It Works', href: '/how-it-works', visible: true },
+                { id: 'features',     label: 'Features',     href: '/features',     visible: false },
+                { id: 'pricing',      label: 'Pricing',      href: '/pricing',      visible: true },
+                { id: 'integrations', label: 'Integrations', href: '/integrations', visible: false },
+            ],
+        },
+        {
+            id: 'resources',
+            label: 'Resources',
+            visible: true,
+            links: [
+                { id: 'docs', label: 'Documentation', href: '/docs',  visible: false },
+                { id: 'blog', label: 'Blog',          href: '/blog',  visible: false },
+            ],
+        },
+        {
+            id: 'company',
+            label: 'Company',
+            visible: true,
+            links: [
+                { id: 'about',   label: 'About',      href: '/about',              visible: false },
+                { id: 'contact', label: 'Contact',    href: 'mailto:hello@seyona.ai', visible: true },
+            ],
+        },
+    ],
+    legal: [
+        { id: 'privacy', label: 'Privacy Policy', href: '/privacy', visible: false },
+        { id: 'terms',   label: 'Terms of Service', href: '/terms', visible: false },
+    ],
+}
+
 export const menuSchema = {
     menu: [
         {

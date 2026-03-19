@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Navbar from './components/menu/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Pricing from './pages/Pricing/Pricing';
 import HowItWorks from './pages/HowItWorks/HowItWorks';
@@ -17,6 +15,7 @@ function App() {
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/how-it-works" element={<HowItWorks />} />
           </Routes>
+          <Footer />
       </div>
     )
 }

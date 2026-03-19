@@ -1,0 +1,122 @@
+.footer {
+    background: var(--color-surface-raised);
+    border-top: 1px solid var(--color-border);
+    margin-top: var(--spacing-3xl);
+}
+
+.footer__inner {
+    display: flex;
+    gap: var(--spacing-2xl);
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
+    align-items: flex-start;
+}
+
+/* Brand column */
+.footer__brand {
+    flex: 0 0 220px;
+}
+
+.footer__logo img {
+    height: 32px;
+    width: auto;
+}
+
+.footer__tagline {
+    margin-top: var(--spacing-sm);
+    font-size: 0.875rem;
+    color: var(--color-ink-muted);
+    line-height: 1.5;
+}
+
+/* Nav columns */
+.footer__nav {
+    display: flex;
+    flex: 1;
+    gap: var(--spacing-xl);
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    min-width: 120px;
+}
+
+.footer__col-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-subtle);
+}
+
+.footer__col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.footer__col a {
+    font-size: 0.9rem;
+    color: var(--color-ink-muted);
+    transition: color 0.15s ease;
+}
+
+.footer__col a:hover {
+    color: var(--color-blossom);
+}
+
+/* Bottom bar */
+.footer__bottom {
+    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-md) 0;
+}
+
+.footer__bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.footer__copy {
+    font-size: 0.8rem;
+    color: var(--color-ink-subtle);
+}
+
+.footer__legal {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.footer__legal a {
+    font-size: 0.8rem;
+    color: var(--color-ink-subtle);
+    transition: color 0.15s ease;
+}
+
+.footer__legal a:hover {
+    color: var(--color-blossom);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer__inner {
+        flex-direction: column;
+        gap: var(--spacing-xl);
+    }
+
+    .footer__brand {
+        flex: unset;
+    }
+
+    .footer__nav {
+        justify-content: flex-start;
+        gap: var(--spacing-lg);
+    }
+}
