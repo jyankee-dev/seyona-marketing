@@ -7,8 +7,8 @@
 .footer__inner {
     display: flex;
     gap: var(--spacing-2xl);
-    padding-top: var(--spacing-2xl);
-    padding-bottom: var(--spacing-2xl);
+    padding-top: var(--spacing-3xl);
+    padding-bottom: var(--spacing-3xl);
     align-items: flex-start;
 }
 
@@ -73,7 +73,7 @@
 /* Bottom bar */
 .footer__bottom {
     border-top: 1px solid var(--color-border);
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-lg) 0;
 }
 
 .footer__bottom-inner {

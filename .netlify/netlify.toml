@@ -1,0 +1,30 @@
+functionsDirectory = "C:\\Users\\Jared\\Documents\\Development\\Seyona\\seyona-marketing\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\Jared\\Documents\\Development\\Seyona\\seyona-marketing\\dist"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "npm run build"
+functions = "C:\\Users\\Jared\\Documents\\Development\\Seyona\\seyona-marketing\\netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
