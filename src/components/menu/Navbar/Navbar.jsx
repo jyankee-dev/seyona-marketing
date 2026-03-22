@@ -59,7 +59,7 @@ export default function Navbar () {
                 </div>
                 {/* CTAs */}
                 <div className="navbar__actions">
-                    <a href="https://app.seyona.ai/login" className="btn btn--ghost">
+                    <a href="https://app.seyona.ai" className="btn btn--ghost">
                         Go to App
                     </a>
                 </div>
@@ -103,7 +103,7 @@ export default function Navbar () {
                                 </Link>
                             ))}
                             <div className="mobile-actions">
-                                <a href="https://app.seyona.ai/login" className="btn btn--ghost btn--full">
+                                <a href="https://app.seyona.ai" className="btn btn--ghost btn--full">
                                     Go to App
                                 </a>
                             </div>

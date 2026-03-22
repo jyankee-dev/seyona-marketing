@@ -3,7 +3,7 @@ export const homeSchema = {
         badge: 'SEO · GEO · AEO',
         headline: 'Your site, always ready for how people search today',
         subheadline: 'Drop a script tag on any page. Seyona automatically generates fresh FAQ content that keeps your site visible on Google, ChatGPT, Perplexity, and every AI search platform in between.',
-        cta_primary: { label: 'Start for free', href: 'https://app.seyona.ai/signup' },
+        cta_primary: { label: 'Start for free', href: 'https://app.seyona.ai' },
         cta_secondary: { label: 'See how it works', href: '#how-it-works' },
         code_snippet: '<script src="https://cdn.seyona.ai/s.js" data-id="YOUR_ID"></script>',
     },
@@ -69,12 +69,12 @@ export const homeSchema = {
         headline: 'Setup takes 30 seconds.',
         subheadline: "That's the whole integration.",
         code_snippet: '<script src="https://cdn.seyona.ai/s.js" data-id="YOUR_ID"></script>',
-        cta: { label: 'Get started free', href: 'https://app.seyona.ai/signup' },
+        cta: { label: 'Get started free', href: 'https://app.seyona.ai' },
     },
     finalCta: {
         headline: 'Ready to stop thinking about SEO?',
         subheadline: 'Join Seyona and let your content work for you.',
-        cta: { label: 'Start for free', href: 'https://app.seyona.ai/signup' },
+        cta: { label: 'Start for free', href: 'https://app.seyona.ai' },
     },
 }
 
@@ -88,7 +88,7 @@ export const pricingSchema = {
             pages: 1,
             trial: '30-day free trial',
             highlight: false,
-            cta: { label: 'Try free for 30 days', href: 'https://app.seyona.ai/signup' },
+            cta: { label: 'Try free for 30 days', href: 'https://app.seyona.ai' },
             visible: true,
         },
         {
@@ -99,7 +99,7 @@ export const pricingSchema = {
             pages: 10,
             trial: null,
             highlight: false,
-            cta: { label: 'Get started', href: 'https://app.seyona.ai/signup' },
+            cta: { label: 'Get started', href: 'https://app.seyona.ai' },
             visible: true,
         },
         {
@@ -110,7 +110,7 @@ export const pricingSchema = {
             pages: 25,
             trial: null,
             highlight: true,
-            cta: { label: 'Get started', href: 'https://app.seyona.ai/signup' },
+            cta: { label: 'Get started', href: 'https://app.seyona.ai' },
             visible: true,
         },
         {
@@ -163,8 +163,8 @@ export const footerSchema = {
         },
     ],
     legal: [
-        { id: 'privacy', label: 'Privacy Policy', href: '/privacy', visible: false },
-        { id: 'terms',   label: 'Terms of Service', href: '/terms', visible: false },
+        { id: 'privacy', label: 'Privacy Policy', href: '/privacy', visible: true },
+        { id: 'terms',   label: 'Terms of Service', href: '/terms', visible: true },
     ],
 }
 
