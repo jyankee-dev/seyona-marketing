@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function Dropdown ({item, isOpen, onToggle, onClose}) {
     const ref = useRef(null);
@@ -41,7 +42,7 @@ export default function Dropdown ({item, isOpen, onToggle, onClose}) {
             {isOpen && visibleChildren.length > 0 && (
                 <div className="nav-dropdown">
                     <div className="nav-dropdown__inner">
-                        {visibleChildren.map((child) => {
+                        {visibleChildren.map((child) => (
                             <Link
                                 key={child.id}
                                 to={child.link}
@@ -50,10 +51,10 @@ export default function Dropdown ({item, isOpen, onToggle, onClose}) {
                             >
                                 <span className="nav-dropdown__label">{child.label}</span>
                                 {child.description && (
-                                    <span className="nav-dropdown__desc">{child.descrption}</span>
+                                    <span className="nav-dropdown__desc">{child.description}</span>
                                 )}
                             </Link>
-                        })}
+                        ))}
                     </div>
                 </div>
             )}
